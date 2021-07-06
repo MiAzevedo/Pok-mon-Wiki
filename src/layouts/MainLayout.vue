@@ -22,7 +22,7 @@
     <q-drawer v-model="leftDrawerOpen" show-if-above :width="200">
       <q-scroll-area class="fit">
         <q-list padding class="menu-list">
-          <q-item clickable v-ripple>
+          <q-item clickable v-ripple to="/">
             <q-item-section avatar class="pokeball_section">
               <q-img src="~assets/super-ball.png" class="pokeball_menu" />
               <!-- <q-icon name="home" /> -->
@@ -30,7 +30,7 @@
 
             <q-item-section> Home </q-item-section>
           </q-item>
-          <q-item clickable v-ripple>
+          <q-item clickable v-ripple to="/pokemon">
             <q-item-section avatar class="pokeball_section">
               <q-img src="~assets/ultra-ball.png" class="pokeball_menu" />
               <!-- <q-icon name="home" /> -->
@@ -38,7 +38,7 @@
 
             <q-item-section> Pokémons </q-item-section>
           </q-item>
-          <q-item clickable v-ripple>
+          <q-item clickable v-ripple to="/item">
             <q-item-section avatar class="pokeball_section">
               <q-img src="~assets/mega-ball.png" class="pokeball_menu" />
               <!-- <q-icon name="home" /> -->
